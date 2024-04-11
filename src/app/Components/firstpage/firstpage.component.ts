@@ -7,15 +7,6 @@ import { Router } from '@angular/router';
   styleUrl: './firstpage.component.scss'
 })
 export class FirstpageComponent {
-  show:boolean=true;
-  showpage:boolean=false
   constructor(private route:Router) { }
-
-  ngOnInit() {
-  }
-doc()
-{
-  this.route.navigate(['/doc']);
-
-}
+  ngOnInit() {}
 }
