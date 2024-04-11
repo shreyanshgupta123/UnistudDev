@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-firstpage',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './firstpage.component.scss'
 })
 export class FirstpageComponent {
+  show:boolean=true;
+  showpage:boolean=false
+  constructor(private route:Router) { }
 
+  ngOnInit() {
+  }
+doc()
+{
+  this.route.navigate(['/doc']);
+
+}
 }
