@@ -2,6 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FirstpageComponent } from './Components/firstpage/firstpage.component';
 import { ApisComponent } from './Components/apis/apis.component';
+import { ECommerceComponent } from './Components/e-commerce/e-commerce.component';
+import { UniversityComponent } from './Components/university/university.component';
+import { FoodComponent } from './Components/food/food.component';
+import { FoodGetmenuComponent } from './Components/food-getmenu/food-getmenu.component';
+import { FoodGetallFoodProductsComponent } from './Components/food-getall-food-products/food-getall-food-products.component';
+import { FoodGetallRestaurantsComponent } from './Components/food-getall-restaurants/food-getall-restaurants.component';
+
 
 const routes: Routes = [
   {
@@ -9,7 +16,25 @@ const routes: Routes = [
   },
   {
     path:'doc',component:ApisComponent
-  }
+  },
+  {
+    path:'doc/Ecommerce',component:ECommerceComponent
+  },
+  {
+    path:'doc/University',component:UniversityComponent
+  },
+  {
+    path:'doc/Food',component:FoodComponent
+  },
+  {
+    path:'doc/Food/Get_Menu',component:FoodGetmenuComponent
+  },
+  {
+    path:'doc/Food/Get_All_Food_Products',component:FoodGetallFoodProductsComponent
+  },
+  {
+    path:'doc/Food/Get_All_Restaurants',component:FoodGetallRestaurantsComponent
+  },
 ];
 
 @NgModule({
