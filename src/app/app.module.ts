@@ -32,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ClipboardModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [
     provideClientHydration()

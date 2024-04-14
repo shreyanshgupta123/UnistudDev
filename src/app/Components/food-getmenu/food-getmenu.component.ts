@@ -10,7 +10,7 @@ export class FoodGetmenuComponent implements OnInit {
   apiUrl: string = 'https://url-backendapi.onrender.com/food_get_menu';
   menuData: any = [];
 items: any;
-
+showclicksign:boolean=false
   constructor(private foodService: FoodService) { }
 
   ngOnInit(): void {
@@ -25,18 +25,8 @@ items: any;
     el.select();
     document.execCommand('copy');
     document.body.removeChild(el);
-    console.log(this.foodService.getMenuData())
-
-    // Fetch data from the API-------------------
-
-    // this.foodService.getMenuData().subscribe(
-    //   (data) => {
-    //     this.menuData = data;
-    //     this.items = this.menuData.length > 0 ? this.menuData[0] : null;
-    //   },
-    //   (error) => {
-    //     console.error('Error fetching data:', error);
-    //   }
-    // );-------------------------
+  
   }
+  
+  
 }
