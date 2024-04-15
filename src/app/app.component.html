@@ -5,20 +5,18 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Homepage</a></li>
+        <!-- <li (click)="Navigation('AIbot')"><a>AIChatbot</a></li> -->
         <li><a>Portfolio</a></li>
         <li><a>About</a></li>
       </ul>
     </div>
   </div>
-  
+
   <div class="navbar-center">
-    
-    <!-- <a class="font-mono">Unistud</a> -->
-    <h2 class="font-mono ">UniStud</h2>
+    <h2 class="font-mono">UniStud</h2>
   </div>
+
   <div class="navbar-end">
-    
     <button class="btn btn-ghost btn-circle">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
     </button>
@@ -28,12 +26,22 @@
         <span class="badge badge-xs badge-primary indicator-item"></span>
       </div>
     </button>
-    <input type="checkbox" (change)="toggleDarkMode()" [checked]="isDark" class="toggle theme-controller" />
+    <!-- Checkbox for toggling the side menu -->
+    <input type="checkbox" class="toggle" (change)="toggleSideMenu($event)" />
   </div>
 
 </div>
 
+<!-- Side menu content -->
+<!-- Side menu content -->
+<div *ngIf="isSideMenuOpen" class="fixed inset-0 bg-gray-400 bg-opacity-90 z-[10]"></div>
+<div *ngIf="isSideMenuOpen" class="fixed inset-y-0 left-0 w-100 bg-white shadow-lg z-[20]">
+  <!-- Input box -->
+  <h1 class="text-2xl m-8 antialiased">Need Help..Ask it! </h1>
+  <br>
+  <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs mb-2 mr-4" (click)="stopPropagation($event)" />
+  <br>
+  <!-- Textarea -->
+  <textarea class="textarea textarea-success" placeholder="Bio" (click)="stopPropagation($event)"></textarea>
+</div>
 <router-outlet></router-outlet>
-
-
-

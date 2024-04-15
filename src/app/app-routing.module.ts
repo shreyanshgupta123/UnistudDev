@@ -8,11 +8,15 @@ import { FoodComponent } from './Components/food/food.component';
 import { FoodGetmenuComponent } from './Components/food-getmenu/food-getmenu.component';
 import { FoodGetallFoodProductsComponent } from './Components/food-getall-food-products/food-getall-food-products.component';
 import { FoodGetallRestaurantsComponent } from './Components/food-getall-restaurants/food-getall-restaurants.component';
+import { AIChatbotComponent } from './Components/aichatbot/aichatbot.component';
 
 
 const routes: Routes = [
   {
     path:'',component:FirstpageComponent
+  },
+  {
+    path:'chatbot',component:AIChatbotComponent
   },
   {
     path:'doc',component:ApisComponent

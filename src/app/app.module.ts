@@ -11,8 +11,9 @@ import { FoodComponent } from './Components/food/food.component';
 import { FoodGetmenuComponent } from './Components/food-getmenu/food-getmenu.component';
 import { FoodGetallRestaurantsComponent } from './Components/food-getall-restaurants/food-getall-restaurants.component';
 import { FoodGetallFoodProductsComponent } from './Components/food-getall-food-products/food-getall-food-products.component';
-import { ClipboardModule } from 'ngx-clipboard';
+
 import { HttpClientModule } from '@angular/common/http';
+import { AIChatbotComponent } from './Components/aichatbot/aichatbot.component';
 
 
 @NgModule({
@@ -27,13 +28,13 @@ import { HttpClientModule } from '@angular/common/http';
     FoodGetmenuComponent,
     FoodGetallRestaurantsComponent,
     FoodGetallFoodProductsComponent,
+    AIChatbotComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ClipboardModule,
     HttpClientModule,
-    
+
   ],
   providers: [
     provideClientHydration()
