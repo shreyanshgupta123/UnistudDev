@@ -2,20 +2,19 @@ import { Component } from '@angular/core';
 import { FoodService } from '../../Service/food.service';
 
 @Component({
-  selector: 'app-food-getall-restaurants',
-  templateUrl: './food-getall-restaurants.component.html',
-  styleUrl: './food-getall-restaurants.component.scss'
+  selector: 'app-get-drinks',
+  templateUrl: './get-drinks.component.html',
+  styleUrl: './get-drinks.component.scss'
 })
-export class FoodGetallRestaurantsComponent {
-
-  apiUrl: string = 'https://url-backendapi.onrender.com/food_get_all_restaurant';
+export class GetDrinksComponent {
+  apiUrl: string = 'https://url-backendapi.onrender.com/food_get_menu';
   menuData: any = [];
 items: any;
-
+showclicksign:boolean=false
   constructor(private foodService: FoodService) { }
 
   ngOnInit(): void {
-    this.copyToClipboard();
+    this.copyToClipboard(); // Call the method to copy URL and fetch data
   }
 
   copyToClipboard(): void {
@@ -26,7 +25,7 @@ items: any;
     el.select();
     document.execCommand('copy');
     document.body.removeChild(el);
-    console.log(this.foodService.getMenuData())
 
   }
+  
 }

@@ -6,9 +6,10 @@ import { ECommerceComponent } from './Components/e-commerce/e-commerce.component
 import { UniversityComponent } from './Components/university/university.component';
 import { FoodComponent } from './Components/food/food.component';
 import { FoodGetmenuComponent } from './Components/food-getmenu/food-getmenu.component';
-import { FoodGetallFoodProductsComponent } from './Components/food-getall-food-products/food-getall-food-products.component';
+
 import { FoodGetallRestaurantsComponent } from './Components/food-getall-restaurants/food-getall-restaurants.component';
 import { AIChatbotComponent } from './Components/aichatbot/aichatbot.component';
+import { GetDrinksComponent } from './Components/get-drinks/get-drinks.component';
 
 
 const routes: Routes = [
@@ -34,7 +35,7 @@ const routes: Routes = [
     path:'doc/Food/Get_Menu',component:FoodGetmenuComponent
   },
   {
-    path:'doc/Food/Get_All_Food_Products',component:FoodGetallFoodProductsComponent
+path:'doc/Food/Get_Drinks',component:GetDrinksComponent
   },
   {
     path:'doc/Food/Get_All_Restaurants',component:FoodGetallRestaurantsComponent

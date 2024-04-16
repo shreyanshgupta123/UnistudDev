@@ -23,25 +23,25 @@ Navigate(component: string) {
       case 'Get_All_Food_Products':
           this.route.navigateByUrl('doc/Food/Get_All_Food_Products');
           break;
-          case 'Food':
-          this.route.navigateByUrl('doc/Food/Get_a_single_Restaurant');
+          case 'Get_All_Drink':
+          this.route.navigateByUrl('doc/Food/Get_Drinks');
           break;
-          case 'Food':
+          case 'Get_all_FoodProducts_of_Category':
           this.route.navigateByUrl('doc/Food/Get_all_FoodProducts_of_Category');
           break;
-          case 'Food':
+          case 'Search_Food_Products':
           this.route.navigateByUrl('doc/Food/Search_Food_Products');
           break;
-          case 'Food':
+          case 'Add_a_FoodProduct':
           this.route.navigateByUrl('doc/Food/Add_a_FoodProduct');
           break;
-          case 'Food':
+          case 'Update_a_FoodProduct':
           this.route.navigateByUrl('doc/Food/Update_a_FoodProduct');
           break;
-          case 'Food':
+          case 'Delete_a_FoodProduct':
           this.route.navigateByUrl('doc/Food/Delete_a_FoodProduct');
           break;
-      // Add more cases as needed
+
       default:
           break;
   }

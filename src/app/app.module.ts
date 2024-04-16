@@ -10,10 +10,11 @@ import { UniversityComponent } from './Components/university/university.componen
 import { FoodComponent } from './Components/food/food.component';
 import { FoodGetmenuComponent } from './Components/food-getmenu/food-getmenu.component';
 import { FoodGetallRestaurantsComponent } from './Components/food-getall-restaurants/food-getall-restaurants.component';
-import { FoodGetallFoodProductsComponent } from './Components/food-getall-food-products/food-getall-food-products.component';
+
 
 import { HttpClientModule } from '@angular/common/http';
 import { AIChatbotComponent } from './Components/aichatbot/aichatbot.component';
+import { GetDrinksComponent } from './Components/get-drinks/get-drinks.component';
 
 
 @NgModule({
@@ -27,8 +28,8 @@ import { AIChatbotComponent } from './Components/aichatbot/aichatbot.component';
     FoodComponent,
     FoodGetmenuComponent,
     FoodGetallRestaurantsComponent,
-    FoodGetallFoodProductsComponent,
     AIChatbotComponent,
+    GetDrinksComponent,
   ],
   imports: [
     BrowserModule,
